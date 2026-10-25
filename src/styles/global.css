@@ -1106,6 +1106,9 @@ code {
 
 .gallery img {
   width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: #fff;
   border-radius: 12px;
 }
 
