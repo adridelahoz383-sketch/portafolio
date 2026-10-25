@@ -1091,6 +1091,24 @@ code {
   margin-top: -6px;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.gallery figure {
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+
 .detail-grid {
   display: grid;
   grid-template-columns: 1.6fr 1fr;

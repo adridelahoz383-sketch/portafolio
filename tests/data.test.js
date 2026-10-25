@@ -9,9 +9,9 @@ import { strings } from '../src/i18n/strings.js';
 const STATUSES = ['verified', 'partial', 'unverified', 'blocked'];
 const TEXT_FIELDS = ['tagline', 'summary', 'purpose', 'features', 'contribution', 'contributionNote', 'challenges', 'run', 'pending'];
 
-test('hay siete proyectos con slugs únicos y un único destacado', () => {
-  assert.equal(projects.length, 7);
-  assert.equal(new Set(projects.map((p) => p.slug)).size, 7);
+test('hay nueve proyectos con slugs únicos y un único destacado', () => {
+  assert.equal(projects.length, 9);
+  assert.equal(new Set(projects.map((p) => p.slug)).size, 9);
   assert.equal(projects.filter((p) => p.featured).length, 1);
   assert.equal(projects.find((p) => p.featured).slug, 'delvefolk');
 });
@@ -43,7 +43,7 @@ test('las claves de interfaz coinciden entre idiomas', () => {
 test('todos los enlaces externos son https y las imágenes existen', () => {
   for (const p of projects) {
     for (const url of [p.repo, p.demo, p.video].filter(Boolean)) assert.match(url, /^https:\/\//, p.slug);
-    if (p.image) assert.ok(existsSync(join('public', p.image)), p.image);
+    for (const img of [p.image, ...(p.gallery ?? [])].filter(Boolean)) assert.ok(existsSync(join('public', img)), img);
   }
   assert.match(profile.github, /^https:\/\//);
   assert.match(profile.linkedin, /^https:\/\//);

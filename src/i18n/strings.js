@@ -19,11 +19,11 @@ export const strings = {
     cats: {
       games: { name: 'Videojuegos', desc: 'Unity y C#: jugabilidad, físicas y pruebas.' },
       web: { name: 'Web', desc: 'Aplicaciones en navegador con JS y React.' },
-      java: { name: 'Java', desc: 'Spring Boot, JPA y MySQL.' },
+      java: { name: 'Java', desc: 'Spring Boot, Swing y MySQL.' },
     },
     projects: {
       title: 'Proyectos',
-      lead: 'Siete proyectos revisados uno a uno: cada ficha indica qué se comprobó y qué está pendiente.',
+      lead: 'Nueve proyectos revisados uno a uno: cada ficha indica qué se comprobó y qué está pendiente.',
       all: 'Todos',
       filter: 'Filtrar por categoría',
       details: 'Ver detalles',
@@ -98,11 +98,11 @@ export const strings = {
     cats: {
       games: { name: 'Games', desc: 'Unity and C#: gameplay, physics and tests.' },
       web: { name: 'Web', desc: 'Browser apps with JS and React.' },
-      java: { name: 'Java', desc: 'Spring Boot, JPA and MySQL.' },
+      java: { name: 'Java', desc: 'Spring Boot, Swing and MySQL.' },
     },
     projects: {
       title: 'Projects',
-      lead: 'Seven projects reviewed one by one: each page states what was checked and what is still pending.',
+      lead: 'Nine projects reviewed one by one: each page states what was checked and what is still pending.',
       all: 'All',
       filter: 'Filter by category',
       details: 'View details',

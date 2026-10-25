@@ -53,6 +53,16 @@ export default function ProjectDetail() {
         <ProjectVisual project={project} large />
       </header>
 
+      {project.gallery?.length > 0 && (
+        <section className="gallery" aria-label={t.detail.gallery}>
+          {project.gallery.map((src) => (
+            <figure key={src} className="glass">
+              <img src={src} alt={`${t.detail.gallery}: ${project.name}`} loading="lazy" />
+            </figure>
+          ))}
+        </section>
+      )}
+
       <div className="detail-grid">
         <div className="detail-main">
           <section className="panel glass">

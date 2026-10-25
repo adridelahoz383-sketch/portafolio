@@ -10,7 +10,7 @@ const R_IN = 82;
 const SPAN = 116;
 // Centro angular de cada sector (0° = derecha, sentido horario en coordenadas SVG).
 const CENTERS = { games: -90, web: 30, java: 150 };
-const SHORT = { games: 'Unity · C#', web: 'JS · React', java: 'Spring · MySQL' };
+const SHORT = { games: 'Unity · C#', web: 'JS · React', java: 'Spring · Swing' };
 
 const rad = (deg) => (deg * Math.PI) / 180;
 const polar = (r, deg) => [C + r * Math.cos(rad(deg)), C + r * Math.sin(rad(deg))];
